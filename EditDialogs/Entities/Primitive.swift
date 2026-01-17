@@ -6,9 +6,18 @@
 //
 
 //swiftlint:disable identifier_name
-enum Primitive: Equatable {
+enum Primitive: Equatable, PrimitiveValue {
     case bool(_ value: Bool)
     case int(_ value: Int)
     case double(_ value: Double)
     case string(_ value: String)
+    
+    var value: Any {
+        switch self {
+        case .bool(let value): value
+        case .int(let value): value
+        case .double(let value): value
+        case .string(let value): value
+        }
+    }
 }

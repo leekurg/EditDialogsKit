@@ -8,26 +8,42 @@
 import SwiftUI
 
 struct PrimitiveView: View {
-    let value: PrimitiveWithDefault
+    let value: any PrimitiveValue
     
     var body: some View {
         Group {
-            switch value {
-            case .bool(let value, _):
-                Image(systemName: value ? "checkmark.circle" : "circle")
+            switch value.value {
+            case let bool as Bool:
+                Image(systemName: bool ? "checkmark.circle" : "circle")
                     .resizable()
+                    .scaledToFit()
                     .frame(width: 20, height: 20)
                 
-            case .int(let value, _):
-                Text(verbatim: "\(value)")
+            case let int as Int:
+                Text(verbatim: "\(int)")
                 
-            case .string(let value, _):
-                Text(verbatim: "\(value)")
+            case let string as String:
+                Text(verbatim: "\(string)")
                 
-            case .double(let value, _):
-                Text(verbatim: String(format: "%.2f", value))
+            case let double as Double:
+                Text(verbatim: String(format: "%.2f", double))
+                
+            default:
+                Image(systemName: "questionmark")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 20, height: 20)
+                    .foregroundStyle(.orange)
             }
         }
-        .foregroundStyle(value.isDefault ? .secondary : .primary)
+        .foregroundStyle(foregroundStyle)
+    }
+    
+    private var foregroundStyle: some ShapeStyle {
+        if let primitiveWithDefault = value as? PrimitiveWithDefault {
+            return primitiveWithDefault.isDefault ? .secondary : .primary
+        }
+        
+        return .secondary
     }
 }

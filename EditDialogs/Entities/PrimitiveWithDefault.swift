@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum PrimitiveWithDefault {
+enum PrimitiveWithDefault: Equatable, PrimitiveValue {
     case bool(value: Bool, default: Bool)
     case int(value: Int, default: Int)
     case string(value: String, default: String)
