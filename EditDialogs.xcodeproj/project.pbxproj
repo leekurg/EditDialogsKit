@@ -15,7 +15,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1E307E0D2F1D41EF00663383 /* Exceptions for "EditDialogs" folder in "EditDialogs" target */ = {
+		1E307E242F1D5A6300663383 /* Exceptions for "EditDialogs" folder in "EditDialogs" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				EditDialogsKit,
@@ -28,7 +28,7 @@
 		1E23CC482F1AF51300F1CE87 /* EditDialogs */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				1E307E0D2F1D41EF00663383 /* Exceptions for "EditDialogs" folder in "EditDialogs" target */,
+				1E307E242F1D5A6300663383 /* Exceptions for "EditDialogs" folder in "EditDialogs" target */,
 			);
 			path = EditDialogs;
 			sourceTree = "<group>";
