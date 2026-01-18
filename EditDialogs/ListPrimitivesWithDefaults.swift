@@ -5,6 +5,7 @@
 //  Created by Илья Аникин on 17.01.2026.
 //
 
+import EditDialogsKit
 import Combine
 import SwiftUI
 

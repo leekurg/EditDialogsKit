@@ -6,13 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1E307E102F1D449300663383 /* EditDialogsKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1E307E0F2F1D449300663383 /* EditDialogsKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1E23CC462F1AF51300F1CE87 /* EditDialogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EditDialogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1E307E0D2F1D41EF00663383 /* Exceptions for "EditDialogs" folder in "EditDialogs" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				EditDialogsKit,
+			);
+			target = 1E23CC452F1AF51300F1CE87 /* EditDialogs */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1E23CC482F1AF51300F1CE87 /* EditDialogs */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1E307E0D2F1D41EF00663383 /* Exceptions for "EditDialogs" folder in "EditDialogs" target */,
+			);
 			path = EditDialogs;
 			sourceTree = "<group>";
 		};
@@ -23,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E307E102F1D449300663383 /* EditDialogsKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				1E23CC482F1AF51300F1CE87 /* EditDialogs */,
+				1E307E0E2F1D449300663383 /* Frameworks */,
 				1E23CC472F1AF51300F1CE87 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +62,13 @@
 				1E23CC462F1AF51300F1CE87 /* EditDialogs.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1E307E0E2F1D449300663383 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +91,7 @@
 			);
 			name = EditDialogs;
 			packageProductDependencies = (
+				1E307E0F2F1D449300663383 /* EditDialogsKit */,
 			);
 			productName = EditDialogs;
 			productReference = 1E23CC462F1AF51300F1CE87 /* EditDialogs.app */;
@@ -332,6 +359,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E307E0F2F1D449300663383 /* EditDialogsKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EditDialogsKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E23CC3E2F1AF51300F1CE87 /* Project object */;
 }

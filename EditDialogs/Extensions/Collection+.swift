@@ -5,7 +5,7 @@
 //  Created by Илья Аникин on 17.01.2026.
 //
 
-public extension Collection where Element: Identifiable {
+extension Collection where Element: Identifiable {
     /// Finds an element by **ID** withing collection.
     ///
     /// Returns ``Optional\none`` when no elements was found.
